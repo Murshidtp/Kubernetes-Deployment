@@ -55,12 +55,12 @@ docker push your_dockerhub_username/your_repository_name:tag
 ### Deploy to Kubernetes
 
 ```bash
-kubectl apply -f deployment.yaml
-kubectl apply -f service.yaml
+kubectl apply -f deployment.yml
+kubectl apply -f service.yml
 ```
 ### Access the App in Minikube
 
 ```bash
 minikube service react-app-service --url
 ```
-Access the app at http://<Minikube_IP>:<NodePort> in your web browser.
+### Access the app at http://<Minikube_IP>:<NodePort> in your web browser.
