@@ -41,10 +41,16 @@ docker build -t netflix-clone:latest .
 ```bash
 docker run -p 3000:3000 -d netflix-clone:latest
 ```
+The app should be accessible at http://localhost:3000.
 ### Tag Docker Image
 
 ```bash
 docker tag netflix-clone:latest your_dockerhub_username/your_repository_name:tag
+```
+### Log in to Docker Hub
+
+```bash
+docker login
 ```
 ### Push the Image to Docker Hub
 
@@ -63,4 +69,4 @@ kubectl apply -f service.yml
 ```bash
 minikube service react-app-service --url
 ```
-### Access the app at http://<Minikube_IP>:<NodePort> in your web browser.
+### The app should be accessible at http://minikubeip:nodeport
